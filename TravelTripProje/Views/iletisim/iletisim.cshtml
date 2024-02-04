@@ -1,0 +1,50 @@
+﻿
+@{
+    ViewBag.Title = "iletisim";
+    Layout = "~/Views/Shared/_TestLayout.cshtml";
+}
+<link href="~/web2/css/bootstrap.css" rel="stylesheet" />
+<link href="~/web2/css/style.css" rel="stylesheet" />
+<div class="contact-content">
+    <div class="container">
+        <div class="contact-info">
+            <h2>İletişim</h2>
+            <p>
+                Merhaba!
+                <br />
+                Kolay Yolculuk web sitesine hoş geldiniz! Sizlerle daha iyi iletişim kurabilmek ve herhangi bir konuda yardımcı olabilmek adına iletişim bölümünü oluşturdum. Sormak istediğiniz bir soru varsa, geri bildirimde bulunmak istiyorsanız veya işbirliği fırsatları hakkında bilgi almak istiyorsanız, bana aşağıdaki form aracılığıyla ulaşabilirsiniz.
+                <br />
+                Sorularınızı en kısa sürede yanıtlamak için buradayım. Ayrıca, sosyal medya hesaplarımdan bana ulaşabilir, en güncel bilgileri ve kampanya detaylarını takip edebilirsiniz.
+            </p>
+        </div>
+        <div class="contact-details">
+            <form method="post" action="/iletisim/MesajEkle/">
+                <input type="text" placeholder="Ad, Soyad" name="AdSoyad" required />
+                <input type="text" placeholder="Email" name="Mail" required />
+                <input type="text" placeholder="Konu" name="Konu" required />
+                <textarea placeholder="Mesaj" name="Mesaj"></textarea>
+                <input type="submit" value="Gönder" />
+              
+            </form>
+        </div>
+        <div class="contact-details">
+            <div class="col-md-6 contact-map">
+                <h4>Adres Konumu</h4>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3123.377114442543!2d28.15941887630143!3d38.478939271816365!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14b85baaf800ba4b%3A0xc57fc3f5b4c53287!2s%C3%96zel%20Salihli%20Can%20Hastanesi!5e0!3m2!1str!2str!4v1707055009070!5m2!1str!2str" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="col-md-6 company_address">
+                <h4>Adres</h4>
+                <p>Yörük Mah.</p>
+                <p>Avar Cad. No: 123</p>
+                <p>Salihli/Manisa</p>
+                <p>Phone:(+90) 5050000000</p>
+                <p>Email: <a href="mailto:emrekeskiner@gmail.com">emrekeskiner@gmail.com</a></p>
+                <p>Beğenin: <a href="https://www.instagram.com/keskineremre">instagram</a>, <a href="https://twitter.com/EmreKeskiner4">Twitter</a></p>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+
+
+    </div>
+</div>
+
