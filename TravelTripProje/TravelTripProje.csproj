@@ -153,6 +153,16 @@
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="ekranGorunsutu\Anasayfa.png" />
+    <Content Include="ekranGorunsutu\BlogDetay.png" />
+    <Content Include="ekranGorunsutu\BlogGuncelleme.png" />
+    <Content Include="ekranGorunsutu\Bloglar.png" />
+    <Content Include="ekranGorunsutu\BlogListesi.png" />
+    <Content Include="ekranGorunsutu\Hakkimizda.png" />
+    <Content Include="ekranGorunsutu\iletisim.png" />
+    <Content Include="ekranGorunsutu\iletisimMesajlar.png" />
+    <Content Include="ekranGorunsutu\YeniBlogEkle.png" />
+    <Content Include="ekranGorunsutu\YorumListesi.png" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -252,6 +262,7 @@
     <Content Include="Views\GirisYap\Login.cshtml" />
     <Content Include="Views\iletisim\iletisim.cshtml" />
     <Content Include="Views\Admin\iletisim.cshtml" />
+    <Content Include="Views\Admin\Hakkimizda.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

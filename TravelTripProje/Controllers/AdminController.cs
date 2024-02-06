@@ -99,5 +99,23 @@ namespace TravelTripProje.Controllers
 
             return View(degerler);
         }
+
+        [Authorize]
+        public ActionResult Hakkimizda()
+        {
+            var degerler = context.Hakkimizdas.FirstOrDefault();
+
+            return View(degerler);
+        }
+
+        [Authorize]
+        public ActionResult HakkimizdaGuncelle(Hakkimizda p)
+        {
+            var hakkimizda = context.Hakkimizdas.Find(p.ID);
+            hakkimizda.FotoUrl = p.FotoUrl;
+            hakkimizda.Aciklama = p.Aciklama;
+            context.SaveChanges();
+            return RedirectToAction("Hakkimizda");
+        }
     }
 }
